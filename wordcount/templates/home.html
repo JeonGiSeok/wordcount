@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About Me</a>
+    </li>
+  </ul>
+
+
+<div class="col-md-7 center-align">
+    <h1 class="title" style="text-align:center; font-size: 3em">텍스트를 입력하세요!
+        <br> 제가 분류해 드릴게요!</h1>
+
+    <br>
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" id="" cols="100" rows="20"></textarea>
+        <br>
+        <input type='submit' value='Count!'>
+    </form>
+
+    <a href="{%url 'about'%}"> ABOUT ME</a>
+
+</div>
